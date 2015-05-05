@@ -1,0 +1,31 @@
+// Mixins
+// -----------
+
+micro-clearfix()
+  &:after
+  &:before
+    content ''
+    display table
+  &:after
+    clear both
+
+inline-center()
+  font-size 0
+  letter-spacing -1px
+  &:before
+  &:after
+  & > *
+    letter-spacing normal
+    font-size 1rem
+  &:before
+    content ''
+    display inline-block
+    vertical-align middle
+    width 0
+    height 100%
+    min-height inherit
+    max-height inherit
+    padding 0
+  & > *
+    display inline-block
+    vertical-align middle 
