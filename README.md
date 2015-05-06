@@ -13,9 +13,8 @@ It's very compatible (isn't flexbox) and by design keeps a small yet highly reus
 
 The proverbial `.wrapper` gone wild, late to the table but now here to stay anyway!
 
-__Should I use flebox instead?__
+__Should I use flebox instead?__  
 While some of the features are less straightforward to achieve in flexbox, you should.  
-On unsupported devices however, I expect dick pics in PM.
 
 ## Usage
 Just add `<link href='wrap.css' rel='stylesheet' type='text/css'>` to your document.
@@ -42,9 +41,9 @@ By default, `<wrap>` is an `inline-block` element, so it's as wide and as high a
 <wrap fill='width|height|both|float'>
 ```  
 
-`width` - auto-fills available parent width
+`width` - auto-fills available parent width  
 `height` - fills 100% parent height  
-`both` - both of the above
+`both` - both of the above  
 `float` - fills remaining horizontal space after a floated element
 
 ### align
@@ -54,7 +53,7 @@ Positions itself inline, relatively to parent or fixed on screen.
 ```  
 
 `left` `right` - floats  
-`center` - inline relative center (uses transform)
+`center` - inline relative center (uses transform)  
 `abs-center` - bullseye center of first relative parent (uses transform)  
 `fixed-center` - bullseye center fixed of screen (uses transform)
 
@@ -64,9 +63,9 @@ Sets alignment for its child elements.
 <wrap distribute='vertical|horizontal|top|bottom'>
 ```  
 
-`vertical` - centers all children vertically relative to own height
+`vertical` - centers all children vertically relative to own height  
 `horizontal` - centers all children horizontally relative to own width  
-`top` - distributes all children to own top border
+`top` - distributes all children to own top border  
 `bottom` - distributes all children to own bottom border
 
 ### clear
