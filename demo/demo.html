@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>flowElement</title>
+  <title>wrapperElement</title>
   <meta charset='UTF-8'>
-  <link rel='stylesheet' type='text/css' href='../src/flow.css'>
-  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel='stylesheet' type='text/css' href='../build/wrap.css'>
   <style type='text/css'>
+    body {
+      margin: 50px;
+    }
     body,
     input {
       font-family: 'Roboto', sans-serif;
     }
+    wrap {
+      margin-bottom: 50px
+    }
   </style>
 </head>
-<body>
+<body class='debug'>
 
-<flow dir='left' content='vertical' debug>
+<wrap align='left' distribute='vertical'>
   <span>some text</span>
   <img src='http://www.online-image-editor.com//styles/2014/images/example_image.png' height='20px'>
   <input type='text' placeholder='input field'>
-</flow>
+</wrap>
+
+<wrap fill='width' distribute='top' clear>
+  <span>some text</span>
+  <img src='http://www.online-image-editor.com//styles/2014/images/example_image.png' height='20px'>
+  <input type='text' placeholder='input field'>
+</wrap>
 
 </body>
 </html>

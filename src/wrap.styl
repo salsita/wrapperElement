@@ -1,0 +1,119 @@
+// wrapperElement
+// -----------
+
+@import 'mixins'
+
+wrap
+wrap-per
+.wrap
+  position relative
+  display inline-block
+  box-sizing border-box
+  micro-clearfix()
+
+  &[fill=width]
+  &[data-fill=width]
+  &.wrap-fill--width
+    display block
+
+  &[fill=height]
+  &[data-fill=height]
+  &.wrap-fill--height
+    height 100%
+
+  &[fill=both]
+  &[data-fill=both]
+  &.wrap-fill--both
+    display block
+    height 100%
+
+  &[align=left]
+  &[data-align=left]
+  &.wrap-align--left
+    float left
+
+  &[align=right]
+  &[data-align=right]
+  &.wrap-align--right
+    float right
+
+  &[align=center]
+  &[data-align=center]
+  &.wrap-align--center
+    position relative
+    left 50%
+    transform(translateX(-50%))
+
+  &[align=abs-center]
+  &[data-align=abs-center]
+  &.wrap-align--abs-center
+    position absolute
+    left 50%
+    top 50%
+    transform(translateX(-50%) translateY(-50%))
+
+  &[align=fixed-center]
+  &[data-align=fixed-center]
+  &.wrap-align--fixed-center
+    position fixed
+    left 50%
+    top 50%
+    transform(translateX(-50%) translateY(-50%))
+
+  &[distribute=vertical]
+  &[data-distribute=vertical]
+  &.wrap-distribute--vertical
+    fullheight-align(middle)
+  
+  &[distribute=horizontal]
+  &[data-distribute=horizontal]
+  &.wrap-distribute--horizontal
+    text-align center
+    > *
+      display inline-block
+      text-align initial
+  
+  &[distribute=top]
+  &[data-distribute=top]
+  &.wrap-distribute--top
+    fullheight-align(top)
+  
+  &[distribute=bottom]
+  &[data-distribute=bottom]
+  &.wrap-distribute--bottom
+    fullheight-align(bottom)
+  
+  &[clear]
+  &[data-clear]
+  &.wrap-clear
+    clear both
+
+  // Debug
+  // -----------
+
+  &[debug]
+  &[data-debug]
+  &.wrap-debug
+  /.debug &
+    border 1px solid rebeccapurple
+    padding 5px
+  
+    &:after
+      content 'wrap'
+      position absolute
+      display inline-block
+      right 0
+      top 0
+      margin -1px -1px 0 0
+      transform(translateX(100%))
+      background-color rebeccapurple
+      color white
+      font-size 10px
+      font-style italic
+      padding 3px 6px
+      clear both
+
+  // Conflicts
+  // -----------
+
+  // None yet found

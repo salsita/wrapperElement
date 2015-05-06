@@ -9,7 +9,7 @@ micro-clearfix()
   &:after
     clear both
 
-inline-center()
+fullheight-align(align)
   font-size 0
   letter-spacing -1px
   &:before
@@ -20,7 +20,7 @@ inline-center()
   &:before
     content ''
     display inline-block
-    vertical-align middle
+    vertical-align align
     width 0
     height 100%
     min-height inherit
@@ -28,4 +28,10 @@ inline-center()
     padding 0
   & > *
     display inline-block
-    vertical-align middle 
+    vertical-align align
+    
+transform(attrs)
+  -webkit-transform attrs
+  -moz-transform attrs
+  -ms-transform attrs
+  transform attrs
