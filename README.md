@@ -57,8 +57,8 @@ Positions itself inline, relatively to parent or fixed on screen.
 
 `left` `right` - floats  
 `center` - inline relative center (uses transform)   
-`abs-center` - bullseye center of first relative parent (uses transform)  
-`fixed-center` - bullseye center fixed of screen (uses transform)
+`center-parent` - bullseye center of first relative parent (uses transform)  
+`center-screen` - bullseye center fixed of screen (uses transform)
 
 ### distribute
 Sets alignment for its direct child elements, no value defaults to `left`. Multiple space-separated properties can be used.
