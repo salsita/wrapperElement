@@ -15,7 +15,10 @@ The proverbial `.wrapper` gone wild, late to the table but now here to stay anyw
 
 __Should I use flebox instead?__  
 Probably, if you can. But sometimes you can’t, or maybe you don't want to.. you hipster.  
-
+  
+__Is this a grid?__  
+No.  
+  
 ## Usage
 Just add `<link href='wrap.css' rel='stylesheet' type='text/css'>` to your document.
 ###Pure element
