@@ -21,12 +21,12 @@ Just add `<link href='wrap.css' rel='stylesheet' type='text/css'>` to your docum
 ###Pure element
 
 ```html
-<wrap fill='height' align='center' clear>
+<wrap fill='height' distribute='center-x right'>
 ```
 ###W3C valid element
 
 ```html
-<wrap-per data-distribute='vertical top' data-debug>
+<wrap-per data-align='center-x top' data-debug>
 ```
 ###CSS classes
 
@@ -49,24 +49,25 @@ By default, `<wrap>` is an `inline-block` element, so it's as wide and as high a
 ### align
 Positions itself inline, relatively to parent or fixed on screen.
 ```html
-<wrap align='left|right|center|abs-center|fixed-center'>
+<wrap align='left|right|center|center-parent|center-screen'>
 ```  
 
 `left` `right` - floats  
-`center` - inline relative center (uses transform)  
+`center` - inline relative center (uses transform)   
 `abs-center` - bullseye center of first relative parent (uses transform)  
 `fixed-center` - bullseye center fixed of screen (uses transform)
 
 ### distribute
-Sets alignment for its child elements. Multiple space-separated properties can be used.
+Sets alignment for its direct child elements, no value defaults to `left`. Multiple space-separated properties can be used.
 ```html
-<wrap distribute='vertical|horizontal|top|bottom'>
+<wrap distribute='left|right|center-x|center-y|top|bottom'>
 ```  
 
-`vertical` - centers all children vertically relative to own height  
-`horizontal` - centers all children horizontally relative to own width  
-`top` - distributes all children to own top border  
-`bottom` - distributes all children to own bottom border
+`left` `right` - aligns children to sides  
+`top` `bottom` - distributes all children to top | bottom border  
+`center-x` - centers all children vertically relative to own height  
+`center-y` - centers all children horizontally relative to own width  
+
 
 ### clear
 Clears all preceding floats.

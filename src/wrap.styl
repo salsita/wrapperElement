@@ -1,6 +1,8 @@
 // wrapperElement
 // -----------
 
+// TODO: Add relative center to remaining space
+
 @import 'mixins'
 
 wrap
@@ -50,45 +52,58 @@ wrap-per
     left 50%
     transform(translateX(-50%))
 
-  &[align=abs-center]
-  &[data-align=abs-center]
-  &.wrap-align--abs-center
+  &[align=center-parent]
+  &[data-align=center-parent]
+  &.wrap-align--center-parent
     position absolute
     left 50%
     top 50%
     transform(translateX(-50%) translateY(-50%))
 
-  &[align=fixed-center]
-  &[data-align=fixed-center]
-  &.wrap-align--fixed-center
+  &[align=center-screen]
+  &[data-align=center-screen]
+  &.wrap-align--center-screen
     position fixed
     left 50%
     top 50%
     transform(translateX(-50%) translateY(-50%))
 
-  &[distribute~=vertical]
-  &[data-distribute~=vertical]
-  &.wrap-distribute--vertical
-    fullheight-align(middle)
-  
-  &[distribute~=horizontal]
-  &[data-distribute~=horizontal]
+  &[distribute~=left]
+  &[data-distribute~=left]
+  &.wrap-distribute--left
+    text-align left
+    > *
+      display inline-block
+      text-align initial
+
+  &[distribute~=right]
+  &[data-distribute~=right]
+  &.wrap-distribute--right
+    text-align right
+
+  &[distribute~=top]
+  &[data-distribute~=top]
+  &.wrap-distribute--top
+    fullheight-align(top)
+
+  &[distribute~=bottom]
+  &[data-distribute~=bottom]
+  &.wrap-distribute--bottom
+    fullheight-align(bottom)
+
+  &[distribute~=center-x]
+  &[data-distribute~=center-x]
   &.wrap-distribute--horizontal
     text-align center
     > *
       display inline-block
       text-align initial
-  
-  &[distribute~=top]
-  &[data-distribute~=top]
-  &.wrap-distribute--top
-    fullheight-align(top)
-  
-  &[distribute~=bottom]
-  &[data-distribute~=bottom]
-  &.wrap-distribute--bottom
-    fullheight-align(bottom)
-  
+
+  &[distribute~=center-y]
+  &[data-distribute~=center-y]
+  &.wrap-distribute--vertical
+    fullheight-align(middle)
+
   &[clear]
   &[data-clear]
   &.wrap-clear
@@ -118,8 +133,3 @@ wrap-per
       font-style italic
       padding 3px 6px
       clear both
-
-  // Conflicts
-  // -----------
-
-  // None yet found
