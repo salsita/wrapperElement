@@ -1,6 +1,6 @@
 # wrapperElement
 ```html
-<wrap fill='height' distribute='vertical'>
+<wrap fill='height' distribute='center-y right'>
   <span>Some text</span>
   <img src='image.png'>
   <input type='text' placeholder='type here'>
