@@ -26,7 +26,7 @@ Just add `<link href='wrap.css' rel='stylesheet' type='text/css'>` to your docum
 ###W3C valid element
 
 ```html
-<wrap-per data-contents='vertical' data-debug>
+<wrap-per data-distribute='vertical top' data-debug>
 ```
 ###CSS classes
 
@@ -58,7 +58,7 @@ Positions itself inline, relatively to parent or fixed on screen.
 `fixed-center` - bullseye center fixed of screen (uses transform)
 
 ### distribute
-Sets alignment for its child elements.
+Sets alignment for its child elements. Multiple space-separated properties can be used.
 ```html
 <wrap distribute='vertical|horizontal|top|bottom'>
 ```  

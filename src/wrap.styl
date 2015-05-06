@@ -66,26 +66,26 @@ wrap-per
     top 50%
     transform(translateX(-50%) translateY(-50%))
 
-  &[distribute=vertical]
-  &[data-distribute=vertical]
+  &[distribute~=vertical]
+  &[data-distribute~=vertical]
   &.wrap-distribute--vertical
     fullheight-align(middle)
   
-  &[distribute=horizontal]
-  &[data-distribute=horizontal]
+  &[distribute~=horizontal]
+  &[data-distribute~=horizontal]
   &.wrap-distribute--horizontal
     text-align center
     > *
       display inline-block
       text-align initial
   
-  &[distribute=top]
-  &[data-distribute=top]
+  &[distribute~=top]
+  &[data-distribute~=top]
   &.wrap-distribute--top
     fullheight-align(top)
   
-  &[distribute=bottom]
-  &[data-distribute=bottom]
+  &[distribute~=bottom]
+  &[data-distribute~=bottom]
   &.wrap-distribute--bottom
     fullheight-align(bottom)
   
