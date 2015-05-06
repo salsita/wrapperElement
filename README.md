@@ -9,7 +9,7 @@
 
 `<wrap>` is a superabstract non-invasive CSS layout building block. 
 
-It's very compatible (isn't flexbox) and by design keeps a small yet highly reusable set of features. It's intention is to simplify common CSS core prototyping patterns, like aligning icons with text or input fields and positioning itself and distributing its contents.  
+It's very compatible (isn't flexbox) and by design keeps a small yet highly reusable set of features. It's intention is to simplify common CSS core prototyping patterns, like aligning icons with text or input fields, positioning itself and distributing its contents.  
 
 The proverbial `.wrapper` gone wild, late to the table but now here to stay anyway!
 
