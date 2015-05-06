@@ -11,10 +11,8 @@
 
 It's very compatible (isn't flexbox) and by design keeps a small yet highly reusable set of features. It's intention is to simplify common CSS core prototyping patterns, like aligning icons with text or input fields, positioning itself and distributing its contents.  
   
-Reusing `<wrap>` and it's properties while building HTML should leave you with just cosmetics to _wrap_ up in CSS.  
+Reusing `<wrap>` and it's properties while building HTML should leave you with just cosmetics to _wrap_ up in CSS. The proverbial `.wrapper` gone wild, late to the table but now here to stay anyway!  
   
-The proverbial `.wrapper` gone wild, late to the table but now here to stay anyway!
-
 __Should I use flebox instead?__  
 Probably, if you can. But sometimes you can’t, or maybe you don't want to.. you hipster.  
   
