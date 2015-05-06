@@ -26,7 +26,7 @@ Just add `<link href='wrap.css' rel='stylesheet' type='text/css'>` to your docum
 ###W3C valid element
 
 ```html
-<wrap-per data-align='center-x top' data-debug>
+<wrap-per data-align='float' data-debug>
 ```
 ###CSS classes
 
