@@ -63,7 +63,7 @@ Positions itself inline, relatively to parent or fixed on screen.
 ### distribute
 Sets alignment for its direct child elements, no value defaults to `left`. Multiple space-separated properties can be used.
 ```html
-<wrap distribute='left|right|center-x|center-y|top|bottom'>
+<wrap distribute='left|right|top|bottom|center-x|center-y'>
 ```  
 
 `left` `right` - aligns children to sides  
