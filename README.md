@@ -13,8 +13,8 @@ It's very compatible (isn't flexbox) and by design keeps a small yet highly reus
   
 Reusing `<wrap>` and it's properties while building HTML should leave you with just cosmetics to _wrap_ up in CSS. The proverbial `.wrapper` gone wild, late to the table but now here to stay anyway!  
   
-__Should I use flebox instead?__  
-Probably, if you can. But sometimes you can’t, or maybe you don't want to.. you hipster.  
+__Should I use flexbox instead?__  
+Probably, if you can. But sometimes you can’t, or maybe you don't want to... you hipster.  
   
 __Is this a grid?__  
 No.  
