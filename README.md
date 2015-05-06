@@ -14,7 +14,7 @@ It's very compatible (isn't flexbox) and by design keeps a small yet highly reus
 The proverbial `.wrapper` gone wild, late to the table but now here to stay anyway!
 
 __Should I use flebox instead?__  
-Yes, if you can. But sometimes you can’t, and in that case this might help.  
+Probably, if you can. But sometimes you can’t, or maybe you don't want to.. you hipster.  
 
 ## Usage
 Just add `<link href='wrap.css' rel='stylesheet' type='text/css'>` to your document.
