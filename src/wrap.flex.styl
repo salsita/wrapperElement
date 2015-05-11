@@ -1,0 +1,124 @@
+// wrapperElement.flex
+// -------------------
+
+@import 'mixins.flex'
+
+body
+  display flex
+  *
+    display inline-flex
+
+wrap
+wrap-per
+.wrap
+  position relative
+
+  &[fill=width]
+  &[data-fill=width]
+  &.wrap-fill--width
+    display flex
+    flex 1
+
+  &[fill=height]
+  &[data-fill=height]
+  &.wrap-fill--height
+    height 100%
+
+  &[fill=both]
+  &[data-fill=both]
+  &.wrap-fill--both
+    display flex
+    height 100%
+
+  &[align=left]
+  &[data-align=left]
+  &.wrap-align--left
+    float left
+
+  &[align=right]
+  &[data-align=right]
+  &.wrap-align--right
+    float right
+
+  &[align=center]
+  &[data-align=center]
+  &.wrap-align--center
+    position relative
+    left 50%
+    transform(translateX(-50%))
+
+  &[align=center-parent]
+  &[data-align=center-parent]
+  &.wrap-align--center-parent
+    position absolute
+    left 50%
+    top 50%
+    transform(translateX(-50%) translateY(-50%))
+
+  &[align=center-screen]
+  &[data-align=center-screen]
+  &.wrap-align--center-screen
+    position fixed
+    left 50%
+    top 50%
+    transform(translateX(-50%) translateY(-50%))
+
+  &[distribute~=left]
+  &[data-distribute~=left]
+  &.wrap-distribute--left
+    justify-content flex-start
+
+  &[distribute~=right]
+  &[data-distribute~=right]
+  &.wrap-distribute--right
+    justify-content flex-end
+
+  &[distribute~=top]
+  &[data-distribute~=top]
+  &.wrap-distribute--top
+    align-items flex-start
+
+  &[distribute~=bottom]
+  &[data-distribute~=bottom]
+  &.wrap-distribute--bottom
+    align-items flex-end
+
+  &[distribute~=center-x]
+  &[data-distribute~=center-x]
+  &.wrap-distribute--horizontal
+    justify-content center
+
+  &[distribute~=center-y]
+  &[data-distribute~=center-y]
+  &.wrap-distribute--vertical
+    align-items center
+
+  &[clear]
+  &[data-clear]
+  &.wrap-clear
+    clear both
+
+  // Debug
+  // -----------
+
+  &[debug]
+  &[data-debug]
+  &.wrap-debug
+  /.debug &
+    border 1px solid rebeccapurple
+    padding 5px
+  
+    &:after
+      content 'wrap'
+      position absolute
+      display inline-block
+      right 0
+      top 0
+      margin -1px -1px 0 0
+      transform(translateX(100%))
+      background-color rebeccapurple
+      color white
+      font-size 10px
+      font-style italic
+      padding 3px 6px
+      clear both
